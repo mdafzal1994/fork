@@ -31,7 +31,8 @@ while(t--)
 	printf("data enter %c \n",c[i-1]);
 }
 
-fd=open("desd",O_WRONLY);
+//fd=open("desd",O_WRONLY);
+fd=open("test.txt",O_CREAT);
   if(fd==-1)
   {
 
@@ -46,7 +47,7 @@ fd=open("desd",O_WRONLY);
   printf("data send\n");
   close(fd);
 // read from sender 
-
+/*
   char rbuffer;
   fd=open("desd",O_RDONLY);
   if(fd==-1)
@@ -57,8 +58,8 @@ fd=open("desd",O_WRONLY);
 
   }
 
-  //read(fd,rbuffer,128);i
-  int sum=0;
+ 
+ 
   while (read(fd,&rbuffer, 1) > 0)
   {
          
@@ -68,7 +69,7 @@ fd=open("desd",O_WRONLY);
 
   close(fd);
 
-
+*/
 
 
 return 0;

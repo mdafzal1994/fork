@@ -11,7 +11,9 @@ int main()
 {
    int fd;
    char rbuffer;
-  fd=open("desd",O_RDONLY);
+ // fd=open("desd",O_RDONLY);
+  fd=open("test.txt",O_RDONLY);
+
   if(fd==-1)
   {
   
@@ -25,14 +27,14 @@ int main()
   while (read(fd,&rbuffer, 1) > 0)
   {      
          sum+=rbuffer-'0';
- 	 //printf("receive : %c\n",rbuffer);
+ 	 printf("receive : %c\n",rbuffer);
   }
-  //printf("sum sended : %d\n",sum);
+  printf("sum sended : %d\n",sum);
 
   close(fd);
 
 
-//send after adding  number 
+/*//send after adding  number 
 fd=open("desd",O_WRONLY);
   if(fd==-1)
   {
@@ -46,7 +48,7 @@ fd=open("desd",O_WRONLY);
   write(fd,c,1);
   close(fd);
 
-
+*/
 
 return 0;
 }
