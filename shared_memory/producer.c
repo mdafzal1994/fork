@@ -18,6 +18,7 @@ int main()
     
       scanf("%d",&a);
       *count=a;
+      sleep(2);
     }
 
 shm_unlink("/cdac");
