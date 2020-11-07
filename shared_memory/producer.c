@@ -19,6 +19,8 @@ int main()
       scanf("%d",&a);
       *count=a;
       sleep(2);
+      if(a==5)
+	      break;
     }
 
 shm_unlink("/cdac");
