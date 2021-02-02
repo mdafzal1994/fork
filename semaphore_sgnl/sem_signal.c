@@ -5,7 +5,7 @@
 
 
 int a,b;
-int sum;    //default vlaue is zero due to  global  store to .bss
+int sum;    
 sem_t inputproc;
 sem_t outputproc;
 void *thread_input(void *arg)
